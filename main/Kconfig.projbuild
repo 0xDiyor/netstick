@@ -1,0 +1,13 @@
+menu "netstick"
+
+config FB_DUMP
+    bool "Debug: drive the UI over the console and dump frames"
+    default n
+    help
+        Installs the USB-Serial-JTAG driver so the host can send 't' (tap),
+        'h' (hold) and 'd' (dump the current frame as base64) over the
+        console. tools/fbview.py turns the dumps into PNGs. Debug builds only:
+        with the driver installed, console output blocks when nothing is
+        reading the port.
+
+endmenu

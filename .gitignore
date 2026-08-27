@@ -1,0 +1,11 @@
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+main/secrets.h
+archive/v1-dashboard/main/secrets.h
+archive/v1-dashboard/sdkconfig.last
+build-debug/
+sim/out/
+sim/netstick-sim
