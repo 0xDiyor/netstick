@@ -1,0 +1,36 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "display.c"
+        "gfx.c"
+        "led.c"
+        "storage.c"
+        "netmgr.c"
+        "scanner.c"
+        "github.c"
+        "anim.c"
+        "fsociety.c"
+        "ui.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp_lcd
+        driver
+        esp_driver_gpio
+        esp_driver_ledc
+        esp_driver_spi
+        esp_driver_sdspi
+        esp_wifi
+        esp_netif
+        esp_event
+        esp_timer
+        esp_http_client
+        esp-tls
+        mbedtls
+        nvs_flash
+        fatfs
+        sdmmc
+        vfs
+        lwip
+        json
+)
+

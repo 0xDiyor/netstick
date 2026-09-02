@@ -1,0 +1,12 @@
+menu "T-Dongle-C5 dashboard"
+
+config FB_DUMP
+    bool "Dump rendered frames to the console (debug)"
+    default n
+    help
+        Base64-encodes each rendered framebuffer to the console so
+        tools/fbview.py can turn it back into a PNG on the host. Lets you
+        review the panel layout without looking at the panel. Cycles through
+        the screens automatically while enabled. Leave off for normal builds.
+
+endmenu
